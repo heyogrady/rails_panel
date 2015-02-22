@@ -1,6 +1,6 @@
 getJSON = function(url, callback) {
   console.log("sending RPC:" + url);
-  chrome.extension.sendRequest({action:'getJSON',url:url}, callback);
+  chrome.runtime.sendRequest({action:'getJSON',url:url}, callback);
 }
 
 var requests = {
